@@ -38,6 +38,7 @@ RUN chmod +x /tmp/*.sh \
   && apk add --update --no-cache bash \
   && bash ./packages.sh \
   && bash ./extensions.sh \
+  && bash ./gcloud.sh \
   && bash ./nodeyarn.sh \
   && composer global require "hirak/prestissimo:^0.3" \
   && rm -rf ~/.composer/cache/* \
